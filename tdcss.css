@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+nav a:hover {
+    color: #ffcc00; /* Change the color to your desired hover color */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/* Additional Styles for Teacher Dashboard Forms */
+form {
+    margin-bottom: 20px;
+    width: 45%; /* Adjust the width to your preference */
+    display: inline-block; /* Display forms side by side */
+    border: 1px solid #ccc; /* Add border to forms */
+    padding: 15px; /* Add padding for better appearance */
+    box-sizing: border-box; /* Include padding in the width */
+    margin-right: 20px; /* Add space between forms */
+}
+
+form:last-child {
+    margin-right: 0; /* Remove margin for the last form */
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form select,
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+form input[type="submit"],
+form input[type="button"] {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form input[type="submit"]:hover,
+form input[type="button"]:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    form {
+        width: 80%;
+        margin-right: 0; /* Adjust margin for responsive layout */
+    }
+}
+
+.teacher-dashboard-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Add space between forms */
+}
+
+form {
+    width: 300px;
+    padding: 15px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form select,
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+form input[type="submit"],
+form input[type="button"] {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form input[type="submit"]:hover,
+form input[type="button"]:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .teacher-dashboard-container {
+        flex-direction: column; /* Stack forms on small screens */
+        align-items: center; /* Center forms vertically */
+    }
+
+    form {
+        width: 80%;
+    }
+}
