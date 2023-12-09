@@ -55,7 +55,7 @@
         <?php
         include('init.php');
 
-        // Fetch data for the analytics report
+        // Fetches data for the analytics report
         $analyticsQuery = "SELECT Class, Gender, AVG(TOTALMARK) AS AvgTotalMark, AVG(s1) AS AvgS1, AVG(s2) AS AvgS2, AVG(s3) AS AvgS3, AVG(s4) AS AvgS4, AVG(s5) AS AvgS5, AVG(s6) AS AvgS6, AVG(s7) AS AvgS7, AVG(s8) AS AvgS8
                       FROM Result
                       JOIN Student ON Result.StudentID = Student.StudentID
@@ -111,7 +111,7 @@
 
     <div class="container">
     <?php
-        include('init.php'); // Adjust this line to include your database connection file
+        include('init.php');
 
         function calculateGrade($raw_mark)
 {
@@ -159,7 +159,7 @@
         $classResult = $conn->query($classQuery);
         ?>
 
-        <!-- Display Gender-wise Results -->
+        <!-- Displays Gender-wise Results -->
         <h3>Gender-wise Analysis</h3>
         <table>
             <tr>
@@ -178,7 +178,7 @@
             ?>
         </table>
 
-        <!-- Display Class-wise Results -->
+        <!-- Displays Class-wise Results -->
         <h3>Class-wise Analysis</h3>
         <table>
             <tr>
