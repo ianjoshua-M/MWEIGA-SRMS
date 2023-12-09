@@ -98,7 +98,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             if ($stmtGrade) {
                 $stmtGrade->bind_param(
-                    "isisssssssss", // Adjusted to match the placeholders
+                    "isisssssssss", 
                     $registrationNumber,
                     $class,
                     $lastResultID,
