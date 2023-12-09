@@ -30,11 +30,11 @@ nav a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
-    transition: color 0.3s; /* Smooth transition for color change */
+    transition: color 0.3s; 
 }
 
 nav a:hover {
-    color: #ffcc00; /* Change the color to your desired hover color */
+    color: #ffcc00; 
 }
 
 /* Footer Styles */
@@ -50,16 +50,16 @@ footer {
 /* Additional Styles for Teacher Dashboard Forms */
 form {
     margin-bottom: 20px;
-    width: 45%; /* Adjust the width to your preference */
-    display: inline-block; /* Display forms side by side */
-    border: 1px solid #ccc; /* Add border to forms */
-    padding: 15px; /* Add padding for better appearance */
-    box-sizing: border-box; /* Include padding in the width */
-    margin-right: 20px; /* Add space between forms */
+    width: 45%; 
+    display: inline-block; 
+    border: 1px solid #ccc; 
+    padding: 15px; 
+    box-sizing: border-box;
+    margin-right: 20px; 
 }
 
 form:last-child {
-    margin-right: 0; /* Remove margin for the last form */
+    margin-right: 0; 
 }
 
 form label {
@@ -95,14 +95,14 @@ form input[type="button"]:hover {
 @media (max-width: 600px) {
     form {
         width: 80%;
-        margin-right: 0; /* Adjust margin for responsive layout */
+        margin-right: 0; 
     }
 }
 
 .teacher-dashboard-container {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Add space between forms */
+    gap: 20px; 
 }
 
 form {
@@ -145,8 +145,8 @@ form input[type="button"]:hover {
 /* Responsive Styles */
 @media (max-width: 600px) {
     .teacher-dashboard-container {
-        flex-direction: column; /* Stack forms on small screens */
-        align-items: center; /* Center forms vertically */
+        flex-direction: column;
+        align-items: center; 
     }
 
     form {
