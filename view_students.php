@@ -70,7 +70,7 @@
         <!-- Class List -->
         <div class="class-list">
             <?php
-            include('init.php'); // Include your database connection file
+            include('init.php'); 
 
             // Fetch distinct classes from the database
             $classListQuery = "SELECT DISTINCT Class FROM Student";
@@ -95,7 +95,7 @@
                     <th>Registration Number</th>
                     <th>Class</th>
                     <th>Gender</th>
-                    <!-- Add more columns as needed -->
+                    
                 </tr>
             </thead>
             <tbody></tbody>
@@ -127,7 +127,7 @@
                         row.insertCell(1).innerText = '<?php echo $student['RegistrationNumber']; ?>';
                         row.insertCell(2).innerText = '<?php echo $student['Class']; ?>';
                         row.insertCell(3).innerText = '<?php echo $student['Gender']; ?>';
-                        // Add more cells as needed
+                       
                     <?php endforeach; ?>
                 }
             <?php } ?>
